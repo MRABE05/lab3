@@ -5,7 +5,7 @@
 import subprocess
 
 def free_space():
-    # Launch the command and capture the output
+    
     result = subprocess.run(
         "df -h | grep '/$' | awk '{print $4}'", 
         shell=True, 
@@ -14,11 +14,11 @@ def free_space():
         stderr=subprocess.PIPE
     )
     
-    # Check for errors in command execution
+    
     if result.returncode != 0:
         return 'Error: ' + result.stderr.strip()
     
-    # Return the free space, stripping any newline characters
+   
     return result.stdout.strip()
 
 if __name__ == '__main__':
