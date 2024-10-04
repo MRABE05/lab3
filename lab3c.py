@@ -3,7 +3,7 @@
 # Author ID: 120352224
 
 def operate(number1, number2, operator):
-    # Use conditional statements to determine the operation
+   
     if operator == 'add':
         result = number1 + number2
     elif operator == 'subtract':
@@ -11,7 +11,7 @@ def operate(number1, number2, operator):
     elif operator == 'multiply':
         result = number1 * number2
     elif operator == 'divide':
-        # Handle division, check for division by zero
+        
         if number2 == 0:
             return 'Error: Cannot divide by zero'
         result = number1 / number2
