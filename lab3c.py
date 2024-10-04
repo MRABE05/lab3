@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 '''Lab 3 Inv 2 function operate '''
-# Author ID: [your_seneca_id]
+# Author ID: 120352224
 
 def operate(number1, number2, operator):
     # Use conditional statements to determine the operation
